@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ShoppingCart home page" timestamp="2017-05-17T09:39:11" hostname="localhost" time="28.992" errors="0" tests="10" skipped="0" disabled="0" failures="0">
+  <testcase classname="ShoppingCart home page" name="Should display the home page" time="2.294" />
+  <testcase classname="ShoppingCart home page" name="should get the item price" time="3.397" />
+  <testcase classname="ShoppingCart home page" name="should select a radio button" time="1.581" />
+  <testcase classname="ShoppingCart home page" name="should display an error message &quot;Please check the quantity&quot; when quantity is 0" time="3.493" />
+  <testcase classname="ShoppingCart home page" name="Should display a error message if quantity is not available" time="3.24" />
+  <testcase classname="ShoppingCart home page" name="should clear all the fields if CLEAR button is clicked" time="3.933" />
+  <testcase classname="ShoppingCart home page" name="should display available sizes for the particular brand" time="2.59" />
+  <testcase classname="ShoppingCart home page" name="buy now button should be disabled if totalprice is equal to &quot; &quot;" time="3.016" />
+  <testcase classname="ShoppingCart home page" name="should navigate to &quot;UserDetails&quot; only when the totalprice is dispalyed" time="2.533" />
+  <testcase classname="ShoppingCart home page" name="should navigate to &quot;Home Page&quot; from &quot;UserDetails&quot; if Back button is clicked" time="2.91" />
+ </testsuite>
+ <testsuite name="Shopping Cart App Must Be Able To Calculate Price" timestamp="2017-05-17T09:39:40" hostname="localhost" time="2.8" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Shopping Cart App Must Be Able To Calculate Price" name="should calculate total price when quantity is 1" time="2.8" />
+ </testsuite>
+ <testsuite name="ShoppingCart home page" timestamp="2017-05-17T09:39:42" hostname="localhost" time="15.357" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="ShoppingCart home page" name="should navigate to UserBillingDetails if user clicks on Yes" time="8.724" />
+  <testcase classname="ShoppingCart home page" name="should navigate to Checkout page if user clicks on No" time="6.632" />
+ </testsuite>
+</testsuites>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping-cart-submit-production</title>
+  <link rel="stylesheet" type="text/css" href="/controllers/client/css/style.css"/>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-app="submitExample"> 
+
+  <div class="container main-page">
+    <header>
+      <div class="header-image">
+        <div class="header-content">
+          <div class="header-buttonContainer">
+            <a href="#" class="js-nav" data-element="logo" target="_blank">
+              <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+              <small>by @solutionsIQIndia</small></a>
+            <a class="Button SignUp" href="#">Sign up</a>
+            <a class="Button Login" href="#">Log in</a>
+          </div>
+          <h2 class="hero-header">Online Shoe Mart</h2>
+          <p class="hero-blurb">Grab your favarate Brand today, Get 25% discount. </p>
+        </div>
+      </div>
+    </header>
+
+    <div ui-view></div>
+    
+  </div>
+  <!--footer starts from here-->
+    <footer>
+      <div class="footer">
+        <span>copyright@2017</span>
+      </div>
+    </footer>
+ 
+  <script src="/controllers/client/angular.js"></script>
+  <script src="/controllers/client/angular-ui-router.js"></script>
+  <script src="/controllers/client/app.js"></script>
+  <script src="/controllers/client/userdetailsController.js"></script>
+  <script src="/controllers/client/userController.js"></script>
+  <script src="/controllers/client/checkoutController.js"></script>
+  <script src="/controllers/client/shippingConformationController.js"></script>
+  <script src="/controllers/client/userBillingDetailsController.js"></script>
+  <script src="/services/userDetailService.js"></script>
+  <script src="/services/saveService.js"></script>
+  <script src="/services/testService.js"></script>
+    
+</body>
+</html>

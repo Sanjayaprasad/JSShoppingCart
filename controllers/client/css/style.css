@@ -1,0 +1,330 @@
+/ CSS Style /
+
+button:focus {outline:0;}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.home-page button {
+    background: #25729a;
+    color: white;
+    border: 1px solid #25729a;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.home-page button[disabled], html input[disabled] {
+    /*cursor: default;*/
+    cursor: not-allowed !important;
+    opacity: 0.65;
+}
+
+.main-page{
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.header-image {
+  / Wave Color /
+  background: #59adeb;
+  background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+  background-size: 350% 350%;
+  animation: waveColors 8s ease infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.js-nav {
+  color: white;
+  text-decoration: none !important;
+  position: absolute;
+  left: 2em;
+  /*display: flex;
+  align-items: center;*/
+}
+.js-nav .glyphicon{
+  font-size: 40px;
+  color: white;
+}
+
+
+.hero-header {
+  color: #fff;
+  font-weight: 200;
+  line-height: 48px;
+  margin-bottom: -5px;
+  font-size: 32px;
+}
+
+.hero-blurb {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 28px;
+  opacity: .7;
+  -ms-filter: "alpha(opacity=70)";
+  transition: opacity 300ms linear;
+  padding-bottom: 2em;
+}
+
+
+/ Buttons /
+
+.Button {
+  -webkit-appearance: none;
+  background: transparent;
+  border-color: currentcolor;
+  border-style: solid;
+  border-width: 1px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  line-height: normal;
+  margin: 0;
+  padding: .4em .75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: normal;
+}
+
+.header-buttonContainer {
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  text-align: right;
+  width: 95%;
+}
+
+.header-buttonContainer .Button {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 35px;
+  text-decoration: none !important;
+}
+
+.header-buttonContainer .Button.Login {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid transparent;
+}
+
+.header-buttonContainer .Button:hover,
+.header-buttonContainer .Button:focus {
+  background: #fff;
+  color: #42c2b5;
+}
+
+
+/ Animation Wave Color /
+
+@-webkit-keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes waveColors {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+
+/ End Animation Wave Color /
+
+.brandtext {
+  /*color: #287ff2;*/
+  color: #25729a;
+}
+.container .form{
+    width: 560px;
+    height: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding:20px;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+    position: relative;
+    left: 100px;
+}
+.radio{
+  width: 0%;
+}
+.message {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: red;
+}
+.data {
+    margin: 0;
+    position: relative;
+    left: 70px;
+}
+
+.main-banner {
+  margin-bottom: 20px;
+}
+.main-banner .jumbotron{
+  background-image: url(../../client/images/shoppingcartbanner.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+  height: 300px;
+  position: relative; 
+  margin: 0; 
+  padding: 0 !important;
+  border-radius: 0 !important; 
+}
+.container.main-page {
+    width: 100%;
+    padding: 0px;
+}
+.btnsubmit {
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.btncancle {
+  border-radius: 5px;
+  width: 15%;
+}
+
+.sign-up-form{
+  max-width: 600px;
+  margin: 15px auto;
+  border:1px solid #ddd;
+  padding: 15px;
+}
+
+footer{
+  width:100%;
+}
+.footer{
+    width: 100%;
+    padding: 24px;
+    background: #404040;
+    color: #999;
+    height: 60px;
+    font-size: .85em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.footer > span{
+   margin-right: auto;
+   margin-left: auto;
+}
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px;
+    border-radius: 5px;
+}
+.shippingName {
+    color: #565656;
+    display: block;
+    border-bottom: #e6e6e6 solid 1px;
+    padding: 0 0 5px;
+    margin: 10px 20px 10px;
+    text-transform: uppercase;
+}
+.shippingDetails {
+    text-transform: uppercase;
+    /*border-bottom: #e6e6e6 solid 1px;*/
+    padding: 0 0 5px;
+    margin: 10px 20px 10px;
+}
+.gridStyle h5 {
+    color: #25729a;
+    padding: 0 0 5px;
+    margin: 10px 20px 10px;
+}
+.itemDetails {
+    padding: 0 0 5px;
+    margin: 10px 20px 10px;
+}
+.shippingconformation {
+    margin: 50px;
+    padding: 0;
+}
+.shippingconformation p {
+  color: green;
+}
+.querymessage {
+    border: 1px solid;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+}
+.submit-checked {
+    background: #25729a;
+    color: white;
+    border: 1px solid #25729a;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.checkout-page button[disabled], html input[disabled] {
+    cursor: not-allowed !important;
+    opacity: 0.65;
+}
+.form-page button {
+    background: #25729a;
+    color: white;
+    border: 1px solid #25729a;
+    margin-top: 15px;
+    border-radius: 5px; 
+}
+.userbillingpage p.help-block {
+    margin-left: 200px;
+}
+.userDetails .checkmessage {
+    margin-left: 100px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.checkmessage p {
+  font-weight: bold;
+}
+.userDetailsHeading {
+    text-align: center;
+    color: #25729a;
+}
+.userBillingHeading {
+    text-align: center;
+    color: #25729a;
+}
+.form-group.billingbtn {
+    margin-left: 180px !important;
+}

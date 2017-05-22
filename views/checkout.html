@@ -1,0 +1,31 @@
+<form ng-controller="checkoutController" ng-submit="submitBtn()" class="checkout-page">
+
+  <div class="col-md-6 data" name="checkout">
+    <h4 class="brandtext">ORDER SUMMARY</h4>
+      <div class="gridStyle" ng-grid="gridOptions">
+        
+        <address>
+           <h5>Product Details</h5>
+           <div class="itemDetails">
+            <div>Item Name: <strong>{{itemDetails.item_ItemName}}</strong></div>
+            <div>Total Price: <strong>{{itemDetails.totalPrice}}</strong></div>
+           </div> 
+           
+           <h5>Delivery Address</h5>
+           <div class="shippingName"><strong>{{shippingDetails.user_name}}</strong></div>
+           <div class="shippingDetails">           
+                <div>{{shippingDetails.user_email}}</div>
+                <div>{{shippingDetails.user_Address}}</div>
+                <div>{{shippingDetails.user_phonenumber}}</div>
+           </div> 
+        </address>
+      </div>
+  </div>
+
+  <div class="col-md-6 data">
+    <h4 class="brandtext">Paymeny Option</h4>
+      <input type="radio" id="rdobtn" ng-model="cod" > CashOnDelivery </input><br/>
+      <button ng-click="navigateBack()" ui-sref="userDetails" class="submit-checked">Back</button>
+      <button ng-click="submit()" id="btnsubmit" ng-model="button" ng-disabled="cod" class="submit-checked">Submit</button>
+  </div>
+  
