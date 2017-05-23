@@ -63,15 +63,6 @@ describe('ShoppingCart home page', function(){
 		browser.sleep(1000);
 	});
 
-	it('should display available sizes for the particular brand',function(){
-		var itemname = "Adidas";
-		element(by.model('item_ItemName')).sendKeys(itemname);
-		element(by.id('viewPrice')).click();
-		expect(result.getText()).toEqual("500");
-		expect($('[ng-show=IsVisible]').isDisplayed()).toBeTruthy();
-		browser.sleep(1000);
-	});
-
 	it('buy now button should be disabled if totalprice is equal to " "', function(){
 		var itemname = "Adidas";
 		var itemqty = 2;
