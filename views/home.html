@@ -16,7 +16,7 @@
 
     <div class="col-md-8 form">   
       
-        Enter Brand Names :
+        Enter Brand Name :
         <input type="text" name="item_name" ng-model="item_ItemName" ng-change="clearPrice()" autocomplete="off" />
         <button type="submit" id="viewPrice" ng-click="singleItemPrice()">View Price</button>
       
@@ -27,7 +27,7 @@
         Avialable Sizes: <strong> {{item_sizes}} </strong>
 
         <br/><br/>
-        Enter Quantity before showing total Price
+        Enter Quantity before showing total Price:
         <input type="text" name="item_qty" ng-model="productData.qty" ng-init="productData.qty=selectedProduct.item_qty" autocomplete="off" />
     
         <br><br>
